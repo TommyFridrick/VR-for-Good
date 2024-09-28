@@ -1,0 +1,84 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+p {
+    color: #34495e;
+    font-size: 1.2em;
+}
+
+/* Flex container for bins */
+.bins {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.bin {
+    width: 180px;
+    height: 180px;
+    border: 3px solid #7f8c8d;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #2c3e50;
+    transition: background-color 0.3s ease;
+}
+
+.bin:hover {
+    background-color: #bdc3c7;
+}
+
+/* Flex container for items */
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* Item styling */
+.item {
+    width: 120px;
+    height: 120px;
+    background-color: #f39c12;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    cursor: grab;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    background-color: #e67e22;
+}
+
+#paper1, #paper2 {
+    background-color: #f1c40f;
+}
+
+#plastic1, #plastic2 {
+    background-color: #3498db;
+}
+
+#metal1, #metal2 {
+    background-color: #95a5a6;
+}
+
